@@ -67,7 +67,7 @@ function Row_students(props) {
         <td>{props.data.contactNo}</td>
         <td className='d-flex'>
           {/* button to View */}
-          <Link to={`/view-student/${props.data.id}`} className='border border-1 border-primary rounded-pill bg-light m-1'><img src={viewIcon} className='m-1'></img></Link>
+          <Link to={`/view-student/${props.data.id}`}><button className='border border-1 border-primary rounded-pill bg-light m-1'><img src={viewIcon} className='m-1'></img></button></Link>
           {/* button to edit */}
           <Link to={`/edit-student/${props.data.id}`}><button className='border border-1 border-dark rounded-pill bg-light m-1'><img src={editIcon} className='m-1'></img ></button></Link>
           {/* button to delete */}
